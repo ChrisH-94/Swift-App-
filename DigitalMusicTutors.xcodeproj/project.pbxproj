@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D53CFDF5054FA2859C0CC7 /* DigitalMusicTutorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4824AA91C3784110BF331367 /* DigitalMusicTutorsApp.swift */; };
+		791E4330D2E945F1B543B9E1 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F40702D2340C2B1BDE382 /* AppTheme.swift */; };
+		B478242A6B05473092A06B18 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99D42B47FE4729BA8BE357 /* ThemeManager.swift */; };
+		7B062A2A274B4DA1B77FA0E7 /* GradeLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD83AF6EF1E4EF6930A9840 /* GradeLevel.swift */; };
+		CF10A04FBC404736A012E29F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5186D2141F4B54A5C1A16F /* PersistenceController.swift */; };
+		AFBD0A3712BC426EB66AAF1E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C1FABEB0844578297658D /* DashboardViewModel.swift */; };
+		CC205078B87743AF8C26AE2A /* HomeworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B604581940628EB4CAA7 /* HomeworkViewModel.swift */; };
+		9CB72F0B684040DEB162B43C /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1A07066545668A2E983D /* CalendarViewModel.swift */; };
+		B247D46846FE4F35809A0A53 /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656676A943144A2494751452 /* ProgressViewModel.swift */; };
+		01C619471B794B5E81358020 /* ResourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C39B1D9DF47178A814AF4 /* ResourceViewModel.swift */; };
+		259B1DF87DA74C9D8407FFD9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAC610E24D4BA1B212A6A8 /* DashboardView.swift */; };
+		0F1FACED5F4D40DE86EF3B50 /* HomeworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AA6121D51E484F88543DD7 /* HomeworkView.swift */; };
+		229B7290BD5B448B81C067BF /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF792CDF875E4762B2AA67C3 /* AddTaskSheet.swift */; };
+		080C2E8D303E41FD88133256 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02BB0449134EDE9AE5F645 /* CalendarView.swift */; };
+		1063171263F740D6BB280CEA /* CalendarGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9385E7F54254B92B84312DA /* CalendarGrid.swift */; };
+		02AE91D3234D47D5BECD0ED8 /* AddLessonSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43753945FEE74D769AF068F6 /* AddLessonSheet.swift */; };
+		6B3CD16D844B4F8CABDA718E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91F2D3B13A492CA25B313B /* ProgressView.swift */; };
+		7F9AA67F451A40E48AEA5CEC /* StudentProgressProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100EADCA304D4B71BD5DF576 /* StudentProgressProfile.swift */; };
+		AC99C896AED2467A897644C9 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39C92B449441EE8369F0DE /* StarRatingView.swift */; };
+		039C9D6F5D60416CA6571E43 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22B05DB478D4FA49CBE8151 /* ResourcesView.swift */; };
+		4991A370DCF04DBBA8150042 /* AddResourceSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91FC4093B0744B4BE4DB192 /* AddResourceSheet.swift */; };
+		BB8183E4AF1643D0804A650B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76AFB3D0454A3C94547B4C /* SettingsView.swift */; };
+		E093F6798C86499BB72FEDCC /* AppIconUploaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0961D976D2534B3A99150ABD /* AppIconUploaderView.swift */; };
+		60402856D2C142229A095ECB /* BrandingColoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D198D0CD364E0F9B7A8D8B /* BrandingColoursView.swift */; };
+		507C3F2371014B9AA208BA82 /* GradeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F57C498BD744F02A892BF1D /* GradeBadge.swift */; };
+		49D68EC90B69464985BCB95E /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36946A724F34403EA22450C3 /* ProgressBarView.swift */; };
+		B242B0384E3440BCAB4AE088 /* StudentAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48433E172F584E4C882E8CEC /* StudentAvatarView.swift */; };
+		9670F4F3D8074B2493B68F63 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4B0AAAFB947AAB607DD3A /* EmptyStateView.swift */; };
+		78D65407F44845BEB1834B9D /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5D07196FA450BA148C1A0 /* PDFGenerator.swift */; };
+		EDD23E02056B45529674ADAA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C03DF90B544D8FBF95742E /* NotificationManager.swift */; };
+		4DBB1827DCA24D21B0413AF3 /* LinkMetadataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A569379930435FB7E3E3F7 /* LinkMetadataFetcher.swift */; };
+		075D76E8C8294ED7B81A3AB5 /* JSONExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4197A884527498498469356 /* JSONExporter.swift */; };
+		F64C3A29CF0C431490C49318 /* ImagePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D4438017541C78FF52B88 /* ImagePersistence.swift */; };
+		2AC29645DF0C4C0984D993BF /* DigitalMusicTutors.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C442BAEA14935997F1908 /* DigitalMusicTutors.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4824AA91C3784110BF331367 /* DigitalMusicTutorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalMusicTutorsApp.swift; sourceTree = "<group>"; };
+		255F40702D2340C2B1BDE382 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		BF99D42B47FE4729BA8BE357 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		2FD83AF6EF1E4EF6930A9840 /* GradeLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeLevel.swift; sourceTree = "<group>"; };
+		8B5186D2141F4B54A5C1A16F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		583C1FABEB0844578297658D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		9237B604581940628EB4CAA7 /* HomeworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewModel.swift; sourceTree = "<group>"; };
+		C8EE1A07066545668A2E983D /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		656676A943144A2494751452 /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		2F6C39B1D9DF47178A814AF4 /* ResourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewModel.swift; sourceTree = "<group>"; };
+		B5FAC610E24D4BA1B212A6A8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C9AA6121D51E484F88543DD7 /* HomeworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkView.swift; sourceTree = "<group>"; };
+		EF792CDF875E4762B2AA67C3 /* AddTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSheet.swift; sourceTree = "<group>"; };
+		DE02BB0449134EDE9AE5F645 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F9385E7F54254B92B84312DA /* CalendarGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGrid.swift; sourceTree = "<group>"; };
+		43753945FEE74D769AF068F6 /* AddLessonSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonSheet.swift; sourceTree = "<group>"; };
+		AB91F2D3B13A492CA25B313B /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		100EADCA304D4B71BD5DF576 /* StudentProgressProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProgressProfile.swift; sourceTree = "<group>"; };
+		7E39C92B449441EE8369F0DE /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		D22B05DB478D4FA49CBE8151 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		B91FC4093B0744B4BE4DB192 /* AddResourceSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddResourceSheet.swift; sourceTree = "<group>"; };
+		3A76AFB3D0454A3C94547B4C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0961D976D2534B3A99150ABD /* AppIconUploaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconUploaderView.swift; sourceTree = "<group>"; };
+		92D198D0CD364E0F9B7A8D8B /* BrandingColoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandingColoursView.swift; sourceTree = "<group>"; };
+		4F57C498BD744F02A892BF1D /* GradeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeBadge.swift; sourceTree = "<group>"; };
+		36946A724F34403EA22450C3 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		48433E172F584E4C882E8CEC /* StudentAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAvatarView.swift; sourceTree = "<group>"; };
+		EFF4B0AAAFB947AAB607DD3A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		3BA5D07196FA450BA148C1A0 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
+		15C03DF90B544D8FBF95742E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A6A569379930435FB7E3E3F7 /* LinkMetadataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMetadataFetcher.swift; sourceTree = "<group>"; };
+		C4197A884527498498469356 /* JSONExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExporter.swift; sourceTree = "<group>"; };
+		170D4438017541C78FF52B88 /* ImagePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistence.swift; sourceTree = "<group>"; };
+		CFC8F6BD554549D5A0255354 /* DigitalMusicTutors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigitalMusicTutors.xcdatamodel; sourceTree = "<group>"; };
+		67DCA8876AE5455A964945CE /* DigitalMusicTutors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalMusicTutors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E7745E7C334500AECA0675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BB16E9D862914AD4AC838043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67DCA8876AE5455A964945CE /* DigitalMusicTutors.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A631731D5B4C36A26AE555 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				255F40702D2340C2B1BDE382 /* AppTheme.swift */,
+				BF99D42B47FE4729BA8BE357 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9482EBCA292349F2A2F9F2A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FD83AF6EF1E4EF6930A9840 /* GradeLevel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7D56235C522433C8066D7F1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8B5186D2141F4B54A5C1A16F /* PersistenceController.swift */,
+				8E0C442BAEA14935997F1908 /* DigitalMusicTutors.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B13A9191E1E94278A052161B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5D07196FA450BA148C1A0 /* PDFGenerator.swift */,
+				15C03DF90B544D8FBF95742E /* NotificationManager.swift */,
+				A6A569379930435FB7E3E3F7 /* LinkMetadataFetcher.swift */,
+				C4197A884527498498469356 /* JSONExporter.swift */,
+				170D4438017541C78FF52B88 /* ImagePersistence.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEC6D3AF70FD48F0B30A5D61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D22B05DB478D4FA49CBE8151 /* ResourcesView.swift */,
+				B91FC4093B0744B4BE4DB192 /* AddResourceSheet.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F2167775B8B49F583583EC0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B5FAC610E24D4BA1B212A6A8 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		6C2B39C5B83E4ECDB422E747 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E86AF4979C84F46898ABB60 /* Calendar */,
+				6F2167775B8B49F583583EC0 /* Dashboard */,
+				716EEB2A0AFE4226879FB8A9 /* Homework */,
+				20369BF42D68433A8D19B83C /* Progress */,
+				CEC6D3AF70FD48F0B30A5D61 /* Resources */,
+				8AF852984500489DB44471D3 /* Settings */,
+				3FC271E56F5C438ABB2F30FD /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AF852984500489DB44471D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3A76AFB3D0454A3C94547B4C /* SettingsView.swift */,
+				0961D976D2534B3A99150ABD /* AppIconUploaderView.swift */,
+				92D198D0CD364E0F9B7A8D8B /* BrandingColoursView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1E86AF4979C84F46898ABB60 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DE02BB0449134EDE9AE5F645 /* CalendarView.swift */,
+				F9385E7F54254B92B84312DA /* CalendarGrid.swift */,
+				43753945FEE74D769AF068F6 /* AddLessonSheet.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		50222E2E81C742A8BB20E336 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				583C1FABEB0844578297658D /* DashboardViewModel.swift */,
+				9237B604581940628EB4CAA7 /* HomeworkViewModel.swift */,
+				C8EE1A07066545668A2E983D /* CalendarViewModel.swift */,
+				656676A943144A2494751452 /* ProgressViewModel.swift */,
+				2F6C39B1D9DF47178A814AF4 /* ResourceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20369BF42D68433A8D19B83C /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				AB91F2D3B13A492CA25B313B /* ProgressView.swift */,
+				100EADCA304D4B71BD5DF576 /* StudentProgressProfile.swift */,
+				7E39C92B449441EE8369F0DE /* StarRatingView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		7F71C6C62B7641A7A19AAB5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4824AA91C3784110BF331367 /* DigitalMusicTutorsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		716EEB2A0AFE4226879FB8A9 /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				C9AA6121D51E484F88543DD7 /* HomeworkView.swift */,
+				EF792CDF875E4762B2AA67C3 /* AddTaskSheet.swift */,
+			);
+			path = Homework;
+			sourceTree = "<group>";
+		};
+		3FC271E56F5C438ABB2F30FD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4F57C498BD744F02A892BF1D /* GradeBadge.swift */,
+				36946A724F34403EA22450C3 /* ProgressBarView.swift */,
+				48433E172F584E4C882E8CEC /* StudentAvatarView.swift */,
+				EFF4B0AAAFB947AAB607DD3A /* EmptyStateView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8E0C442BAEA14935997F1908 /* DigitalMusicTutors.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFC8F6BD554549D5A0255354 /* DigitalMusicTutors.xcdatamodel */,
+			);
+			currentVersion = CFC8F6BD554549D5A0255354 /* DigitalMusicTutors.xcdatamodel */;
+			path = DigitalMusicTutors.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		C0F59874249C4D8EBB18DD23 /* DigitalMusicTutors */ = {
+			isa = PBXGroup;
+			children = (
+				7F71C6C62B7641A7A19AAB5A /* App */,
+				E7D56235C522433C8066D7F1 /* CoreData */,
+				9482EBCA292349F2A2F9F2A8 /* Models */,
+				C7A631731D5B4C36A26AE555 /* Theme */,
+				B13A9191E1E94278A052161B /* Utilities */,
+				50222E2E81C742A8BB20E336 /* ViewModels */,
+				6C2B39C5B83E4ECDB422E747 /* Views */,
+				97E7745E7C334500AECA0675 /* Info.plist */,
+			);
+			path = DigitalMusicTutors;
+			sourceTree = "<group>";
+		};
+		742661F8208F417BA8C55678 = {
+			isa = PBXGroup;
+			children = (
+				C0F59874249C4D8EBB18DD23 /* DigitalMusicTutors */,
+				BB16E9D862914AD4AC838043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C467E6E6BCD64E0D8FB9ADC1 /* DigitalMusicTutors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5038C64D29F44B3B4B49547 /* Build configuration list for PBXNativeTarget "DigitalMusicTutors" */;
+			buildPhases = (
+				AAB85608C8C847928789191A /* Sources */,
+				D446531E843F481094FA5530 /* Frameworks */,
+				C3A67A7FCEE44F648C64FC1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalMusicTutors;
+			packageProductDependencies = (
+			);
+			productName = DigitalMusicTutors;
+			productReference = 67DCA8876AE5455A964945CE /* DigitalMusicTutors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F910E1DD0EE94483BB58E6E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C467E6E6BCD64E0D8FB9ADC1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F35BE2CAFC0D4AFC98D140D8 /* Build configuration list for PBXProject "DigitalMusicTutors" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 742661F8208F417BA8C55678;
+			productRefGroup = BB16E9D862914AD4AC838043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C467E6E6BCD64E0D8FB9ADC1 /* DigitalMusicTutors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAB85608C8C847928789191A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D53CFDF5054FA2859C0CC7 /* DigitalMusicTutorsApp.swift in Sources */,
+				791E4330D2E945F1B543B9E1 /* AppTheme.swift in Sources */,
+				B478242A6B05473092A06B18 /* ThemeManager.swift in Sources */,
+				7B062A2A274B4DA1B77FA0E7 /* GradeLevel.swift in Sources */,
+				CF10A04FBC404736A012E29F /* PersistenceController.swift in Sources */,
+				AFBD0A3712BC426EB66AAF1E /* DashboardViewModel.swift in Sources */,
+				CC205078B87743AF8C26AE2A /* HomeworkViewModel.swift in Sources */,
+				9CB72F0B684040DEB162B43C /* CalendarViewModel.swift in Sources */,
+				B247D46846FE4F35809A0A53 /* ProgressViewModel.swift in Sources */,
+				01C619471B794B5E81358020 /* ResourceViewModel.swift in Sources */,
+				259B1DF87DA74C9D8407FFD9 /* DashboardView.swift in Sources */,
+				0F1FACED5F4D40DE86EF3B50 /* HomeworkView.swift in Sources */,
+				229B7290BD5B448B81C067BF /* AddTaskSheet.swift in Sources */,
+				080C2E8D303E41FD88133256 /* CalendarView.swift in Sources */,
+				1063171263F740D6BB280CEA /* CalendarGrid.swift in Sources */,
+				02AE91D3234D47D5BECD0ED8 /* AddLessonSheet.swift in Sources */,
+				6B3CD16D844B4F8CABDA718E /* ProgressView.swift in Sources */,
+				7F9AA67F451A40E48AEA5CEC /* StudentProgressProfile.swift in Sources */,
+				AC99C896AED2467A897644C9 /* StarRatingView.swift in Sources */,
+				039C9D6F5D60416CA6571E43 /* ResourcesView.swift in Sources */,
+				4991A370DCF04DBBA8150042 /* AddResourceSheet.swift in Sources */,
+				BB8183E4AF1643D0804A650B /* SettingsView.swift in Sources */,
+				E093F6798C86499BB72FEDCC /* AppIconUploaderView.swift in Sources */,
+				60402856D2C142229A095ECB /* BrandingColoursView.swift in Sources */,
+				507C3F2371014B9AA208BA82 /* GradeBadge.swift in Sources */,
+				49D68EC90B69464985BCB95E /* ProgressBarView.swift in Sources */,
+				B242B0384E3440BCAB4AE088 /* StudentAvatarView.swift in Sources */,
+				9670F4F3D8074B2493B68F63 /* EmptyStateView.swift in Sources */,
+				78D65407F44845BEB1834B9D /* PDFGenerator.swift in Sources */,
+				EDD23E02056B45529674ADAA /* NotificationManager.swift in Sources */,
+				4DBB1827DCA24D21B0413AF3 /* LinkMetadataFetcher.swift in Sources */,
+				075D76E8C8294ED7B81A3AB5 /* JSONExporter.swift in Sources */,
+				F64C3A29CF0C431490C49318 /* ImagePersistence.swift in Sources */,
+				2AC29645DF0C4C0984D993BF /* DigitalMusicTutors.xcdatamodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D446531E843F481094FA5530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3A67A7FCEE44F648C64FC1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CFFCBDD0FB340059468CF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35001E6FEC7B44C89F7A74D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B9EEF0CE5494058AB1664D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DigitalMusicTutors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SWIFT_VERSION = 5.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmusictutors.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D2157C9D2937411A87A0516F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DigitalMusicTutors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SWIFT_VERSION = 5.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmusictutors.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F35BE2CAFC0D4AFC98D140D8 /* Build configuration list for PBXProject "DigitalMusicTutors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CFFCBDD0FB340059468CF3C /* Debug */,
+				35001E6FEC7B44C89F7A74D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5038C64D29F44B3B4B49547 /* Build configuration list for PBXNativeTarget "DigitalMusicTutors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9EEF0CE5494058AB1664D3 /* Debug */,
+				D2157C9D2937411A87A0516F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = F910E1DD0EE94483BB58E6E8 /* Project object */;
+}
