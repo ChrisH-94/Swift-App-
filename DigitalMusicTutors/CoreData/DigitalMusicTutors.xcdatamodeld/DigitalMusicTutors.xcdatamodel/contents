@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HomeworkTask" representedClassName="HomeworkTask" syncable="YES" codeGenerationType="class">
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="taskDescription" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="tasks" inverseEntity="Student"/>
+    </entity>
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="60" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lessonNotes" optional="YES" attributeType="String"/>
+        <attribute name="recurrence" optional="YES" attributeType="String"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="lessons" inverseEntity="Student"/>
+    </entity>
+    <entity name="Piece" representedClassName="Piece" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="pieces" inverseEntity="Student"/>
+    </entity>
+    <entity name="Resource" representedClassName="Resource" syncable="YES" codeGenerationType="class">
+        <attribute name="assignedTo" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="resourceDescription" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SkillRating" representedClassName="SkillRating" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="skillRatings" inverseEntity="Student"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contactEmail" optional="YES" attributeType="String"/>
+        <attribute name="gradeLevel" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lessonDay" optional="YES" attributeType="String"/>
+        <attribute name="lessonTime" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="overallProgress" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Lesson" inverseName="student" inverseEntity="Lesson"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TeacherNote" inverseName="student" inverseEntity="TeacherNote"/>
+        <relationship name="pieces" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Piece" inverseName="student" inverseEntity="Piece"/>
+        <relationship name="skillRatings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SkillRating" inverseName="student" inverseEntity="SkillRating"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HomeworkTask" inverseName="student" inverseEntity="HomeworkTask"/>
+    </entity>
+    <entity name="TeacherNote" representedClassName="TeacherNote" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="notes" inverseEntity="Student"/>
+    </entity>
+</model>
